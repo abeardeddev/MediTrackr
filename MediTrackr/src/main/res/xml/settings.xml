@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="mediPrefSettings">
+
+    <PreferenceCategory android:title="@string/pref_track_medication" >
+
+
+        <EditTextPreference
+            android:title="@string/medication_name"
+            android:summary="@string/medication_name_summary"
+            android:key="nameMed"
+            />
+
+        <EditTextPreference
+            android:title="@string/number_of"
+            android:summary="@string/number_of_summary"
+            android:key="dailyMed"
+            android:defaultValue="3"
+            />
+
+        <EditTextPreference
+            android:title="@string/first_dose"
+            android:summary="@string/first_dose_summary"
+            android:key="firstTime"
+            android:defaultValue="7"
+            />
+
+        <EditTextPreference
+            android:title="@string/dose_interval"
+            android:summary="@string/dose_interval_summary"
+            android:key="doseInterval"
+            android:defaultValue="7"
+            />
+
+        <EditTextPreference
+            android:title="@string/medication_amount"
+            android:summary="@string/medication_amount_summary"
+            android:key="amountMed"
+            android:defaultValue="30"
+
+            />
+
+
+    </PreferenceCategory>
+
+
+
+</PreferenceScreen>
