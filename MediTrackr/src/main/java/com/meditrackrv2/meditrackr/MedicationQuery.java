@@ -3,7 +3,6 @@ package com.meditrackrv2.meditrackr;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -22,8 +21,6 @@ import com.meditrackrv2.meditrackr.services.UPCSearchService;
 
 
 public class MedicationQuery extends Activity implements ServiceListener, View.OnClickListener {
-
-    private static final int RESULT_SETTINGS = 1;
 
     private Thread thread;
     private JSONObject upcSearch;
@@ -107,7 +104,6 @@ public class MedicationQuery extends Activity implements ServiceListener, View.O
                 tvResult.setText(upcSearch.getString("itemname"));
                 tvDescription.setText(upcSearch.getString("description"));
                 String url = "http://www.drugs.com/search.php?sources%5B%5D=uk&searchterm=" + upcSearch.getString("itemname");
-                Log.i("URL", url);
                 wvSearch.loadUrl(url);
             } catch (JSONException ex) {}
 

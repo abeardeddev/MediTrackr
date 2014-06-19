@@ -8,7 +8,6 @@ import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -75,14 +74,12 @@ public class MainActivity extends ActionBarActivity {
                     tvTrackStatus.setText("Tracking Medication: Yes");
                     activitySettings.edit().putBoolean("isRunning", true).commit();
                     startTracking();
-                    Log.i("Tracking Start", String.valueOf(isTracking));
                 }
                 else if(isTracking){
                     // Add stopTracking
                     btnTrack.setText("Start Tracking");
                     tvTrackStatus.setText("Tracking Medication: No");
                     activitySettings.edit().putBoolean("isRunning", false).commit();
-                    Log.i("Tracking Stop", String.valueOf(isTracking));
                 }
 
             }
