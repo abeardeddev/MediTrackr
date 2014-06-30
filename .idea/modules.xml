@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/MediTrackr/MediTrackr.iml" filepath="$PROJECT_DIR$/MediTrackr/MediTrackr.iml" />
-      <module fileurl="file://$PROJECT_DIR$/MediTrackrV2.iml" filepath="$PROJECT_DIR$/MediTrackrV2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MediTrackr.iml" filepath="$PROJECT_DIR$/MediTrackr.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MediTrackr/MediTrackr-MediTrackr.iml" filepath="$PROJECT_DIR$/MediTrackr/MediTrackr-MediTrackr.iml" />
     </modules>
   </component>
 </project>
