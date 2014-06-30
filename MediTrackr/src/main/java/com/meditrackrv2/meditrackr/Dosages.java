@@ -7,6 +7,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
+import android.support.v4.app.FragmentActivity;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -22,7 +23,7 @@ import java.util.Locale;
 import java.util.TimeZone;
 
 
-public class Dosages extends ActionBarActivity {
+public class Dosages extends FragmentActivity {
 
     private static final int RESULT_SETTINGS = 1;
     static int todaysDose = 1;
