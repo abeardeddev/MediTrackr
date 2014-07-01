@@ -45,7 +45,7 @@ public class MainActivity extends FragmentActivity {
 
         String medicationName = sharePrefs.getString("nameMed", "N/A");
         String dayDoseStr = sharePrefs.getString("dailyMed", "N/A");
-        String tabTotalStr = sharePrefs.getString("amountMed", "N/A"); // Change to Integer
+        String tabTotalStr = sharePrefs.getString("amountMed", "N/A");
 
         tvName.setText("Medication Name: " + medicationName);
         tvDosage.setText("Daily Dosage: " + dayDoseStr);
